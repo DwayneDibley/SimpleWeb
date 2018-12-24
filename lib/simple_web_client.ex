@@ -6,7 +6,7 @@ defmodule SimpleWebClient do
   @doc """
   Get the given URL.
 
-  # SimpleWebClient.get("http://www.google.com/")
+  SimpleWebClient.get("http://www.google.com/")
   """
   def get(url) do
     _ret = :inets.start()
