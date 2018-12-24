@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.1">
+    <title>WxDsl – wx_tests v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
+    <script src="dist/sidebar_items-36ec9cbcf6.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  <a href="readme.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+wx_tests      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">wx_tests v0.1.0</small>
+WxDsl              </h1>
+
+
+        <section id="moduledoc">
+<p>An implementation of a DSL for generating GUI’s</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#bgColour/1">bgColour(colour)</a>
+  </div>
+    <div class="summary-synopsis"><p>Set the background colour for the enclosing control</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#border/1">border(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#boxSizer/2">boxSizer(attributes, list)</a>
+  </div>
+    <div class="summary-synopsis"><p>Create a new box sizer</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#button/1">button(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#button/2">button(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#codeWindow/1">codeWindow(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#codeWindow/2">codeWindow(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#event/1">event(eventType)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#event/2">event(eventType, callBack)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#events/1">events(attributes)</a>
+  </div>
+    <div class="summary-synopsis"><p>Macro to set up the event connections for the window.
+The attributes consist of one of the following:
+{<event>: callback | nil, <option>: value, …}</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#frame/2">frame(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_opts_map/1">get_opts_map(opts)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_opts_map/2">get_opts_map(list, opts)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#htmlWindow/1">htmlWindow(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#htmlWindow/2">htmlWindow(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#layout/1">layout(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#layout/2">layout(layout, attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mainWindow/2">mainWindow(attributes, list)</a>
+  </div>
+    <div class="summary-synopsis"><p>This is the top level window and should be the outer element of a window specification. This window performs the initialisation</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#menu/2">menu(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#menuBar/1">menuBar(list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#menuItem/1">menuItem(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#menuSeparator/0">menuSeparator()</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#panel/2">panel(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#replaceIfTrue/3">replaceIfTrue(originalValue, condition, newValue)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#scrolledWindow/2">scrolledWindow(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setEvents/1">setEvents(events)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#setEvents/2">setEvents(list, parent)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#spacer/1">spacer(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#staticBoxSizer/2">staticBoxSizer(attributes, list)</a>
+  </div>
+    <div class="summary-synopsis"><p>Create a new box sizer</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#staticText/1">staticText(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#statusBar/1">statusBar(attributes)</a>
+  </div>
+    <div class="summary-synopsis"><p>Add a status bar to the enclosing frame</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#textControl/1">textControl(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#tool/1">tool(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#toolBar/2">toolBar(attributes, list)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#window/1">window(attributes)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#window/2">window(attributes, list)</a>
+  </div>
+    <div class="summary-synopsis"><p>Create a new window</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#xstaticBoxSizer/2">xstaticBoxSizer(attributes, list)</a>
+  </div>
+</div>
+  </div>
+          
+        </section>
+
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+<div class="detail" id="bgColour/1">
+    <div class="detail-header">
+    <a href="#bgColour/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">bgColour(colour)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Set the background colour for the enclosing control.</p>
+<p>The colour may be either one of the defined colours in wxDefines.ex or a nummeric
+RGB specification in the form {r, g, b}.</p>
+<pre><code class="nohighlight makeup elixir"><span class="w">  </span><span class="n">bgColour</span><span class="p" data-group-id="8921260045-1">(</span><span class="na">@wxSILVER</span><span class="p" data-group-id="8921260045-1">)</span><span class="w">
+  </span><span class="n">bgColour</span><span class="p" data-group-id="8921260045-2">(</span><span class="p" data-group-id="8921260045-3">{</span><span class="p" data-group-id="8921260045-4">{</span><span class="mi">192</span><span class="p">,</span><span class="w"> </span><span class="mi">192</span><span class="p">,</span><span class="w"> </span><span class="mi">192</span><span class="p" data-group-id="8921260045-4">}</span><span class="p" data-group-id="8921260045-3">}</span><span class="p" data-group-id="8921260045-2">)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="border/1">
+    <div class="detail-header">
+    <a href="#border/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">border(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="boxSizer/2">
+    <div class="detail-header">
+    <a href="#boxSizer/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">boxSizer(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Create a new box sizer.</p>
+  </section>
+</div>
+<div class="detail" id="button/1">
+    <div class="detail-header">
+    <a href="#button/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">button(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="button/2">
+    <div class="detail-header">
+    <a href="#button/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">button(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="codeWindow/1">
+    <div class="detail-header">
+    <a href="#codeWindow/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">codeWindow(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="codeWindow/2">
+    <div class="detail-header">
+    <a href="#codeWindow/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">codeWindow(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="event/1">
+    <div class="detail-header">
+    <a href="#event/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">event(eventType)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="event/2">
+    <div class="detail-header">
+    <a href="#event/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">event(eventType, callBack)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="events/1">
+    <div class="detail-header">
+    <a href="#events/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">events(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Macro to set up the event connections for the window.
+The attributes consist of one of the following:
+{<event>: callback | nil, <option>: value, …}</p>
+<p>event may be one of:
+  :command_button_clicked
+  :close_window
+  :timeout                  # This is a function to be called repeatedly every</p>
+<pre><code class="nohighlight makeup elixir"><span class="w">                        </span><span class="c1"># n seconds where n is given by the :delay options</span><span class="w">
+                        </span><span class="c1"># in milliseconds (default 1000 (1 second))</span></code></pre>
+<p>if a callback is supplied it must have arity 4.</p>
+  </section>
+</div>
+<div class="detail" id="frame/2">
+    <div class="detail-header">
+    <a href="#frame/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">frame(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="get_opts_map/1">
+    <div class="detail-header">
+    <a href="#get_opts_map/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_opts_map(opts)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="get_opts_map/2">
+    <div class="detail-header">
+    <a href="#get_opts_map/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_opts_map(list, opts)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="htmlWindow/1">
+    <div class="detail-header">
+    <a href="#htmlWindow/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">htmlWindow(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="htmlWindow/2">
+    <div class="detail-header">
+    <a href="#htmlWindow/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">htmlWindow(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="layout/1">
+    <div class="detail-header">
+    <a href="#layout/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">layout(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="layout/2">
+    <div class="detail-header">
+    <a href="#layout/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">layout(layout, attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="mainWindow/2">
+    <div class="detail-header">
+    <a href="#mainWindow/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">mainWindow(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>This is the top level window and should be the outer element of a window specification. This window performs the initialisation.</p>
+<table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left">Parameter</th><th style="text-align: left">Description</th><th style="text-align: left">Value</th><th style="text-align: left">Default</th>
+</tr>
+</thead>
+<tr>
+<td style="text-align: left">name</td><td style="text-align: left">The name by which the window will be referred to.</td><td style="text-align: left">atom()</td><td style="text-align: left">modulename</td>
+</tr>
+<tr>
+<td style="text-align: left">show</td><td style="text-align: left">If set to true the window will be made visible when the construction is complete. If set to false, the window will be invisible until explicitly shown using :wxFrame.show(frame).</td><td style="text-align: left">Boolean()</td><td style="text-align: left">true</td>
+</tr>
+</table>
+<p>Example:</p>
+<pre><code class="nohighlight makeup elixir"><span class="kd">defmodule</span><span class="w"> </span><span class="nc">TestWindow</span><span class="w"> </span><span class="k" data-group-id="0401511629-1">do</span><span class="w">
+  </span><span class="kn">use</span><span class="w"> </span><span class="nc">WxDsl</span><span class="w">
+  </span><span class="kn">import</span><span class="w"> </span><span class="nc">WxDefines</span><span class="w">
+
+  </span><span class="kd">def</span><span class="w"> </span><span class="nf">createWindow</span><span class="p" data-group-id="0401511629-2">(</span><span class="n">show</span><span class="p" data-group-id="0401511629-2">)</span><span class="w"> </span><span class="k" data-group-id="0401511629-3">do</span><span class="w">
+    </span><span class="n">mainWindow</span><span class="w"> </span><span class="ss">show</span><span class="p">:</span><span class="w"> </span><span class="n">show</span><span class="w"> </span><span class="k" data-group-id="0401511629-4">do</span><span class="w">
+      </span><span class="c1"># Create a frame with a status bar and a menu.</span><span class="w">
+      </span><span class="n">frame</span><span class="w"> </span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="ss">:main_frame</span><span class="p">,</span><span class="w">
+      </span><span class="n">...</span><span class="w">
+      </span><span class="n">...</span><span class="w">
+      </span><span class="k" data-group-id="0401511629-4">end</span><span class="w">
+    </span><span class="k" data-group-id="0401511629-3">end</span><span class="w">
+  </span><span class="k" data-group-id="0401511629-1">end</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="menu/2">
+    <div class="detail-header">
+    <a href="#menu/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">menu(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="menuBar/1">
+    <div class="detail-header">
+    <a href="#menuBar/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">menuBar(list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="menuItem/1">
+    <div class="detail-header">
+    <a href="#menuItem/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">menuItem(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="menuSeparator/0">
+    <div class="detail-header">
+    <a href="#menuSeparator/0" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">menuSeparator()</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="panel/2">
+    <div class="detail-header">
+    <a href="#panel/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">panel(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="replaceIfTrue/3">
+    <div class="detail-header">
+    <a href="#replaceIfTrue/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">replaceIfTrue(originalValue, condition, newValue)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="scrolledWindow/2">
+    <div class="detail-header">
+    <a href="#scrolledWindow/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">scrolledWindow(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="setEvents/1">
+    <div class="detail-header">
+    <a href="#setEvents/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">setEvents(events)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="setEvents/2">
+    <div class="detail-header">
+    <a href="#setEvents/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">setEvents(list, parent)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="spacer/1">
+    <div class="detail-header">
+    <a href="#spacer/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">spacer(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="staticBoxSizer/2">
+    <div class="detail-header">
+    <a href="#staticBoxSizer/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">staticBoxSizer(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Create a new box sizer.</p>
+  </section>
+</div>
+<div class="detail" id="staticText/1">
+    <div class="detail-header">
+    <a href="#staticText/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">staticText(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="statusBar/1">
+    <div class="detail-header">
+    <a href="#statusBar/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">statusBar(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Add a status bar to the enclosing frame.</p>
+<table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left">attributes</th><th style="text-align: left">Description</th><th style="text-align: left">Value</th><th style="text-align: left">Default</th>
+</tr>
+</thead>
+<tr>
+<td style="text-align: left">number</td><td style="text-align: left">The number of fields to create. Specify a value greater than 1 to create a multi-field status bar.</td><td style="text-align: left">atom()</td><td style="text-align: left">modulename</td>
+</tr>
+<tr>
+<td style="text-align: left">style</td><td style="text-align: left">The status bar style.</td><td style="text-align: left">integer()</td><td style="text-align: left">1</td>
+</tr>
+<tr>
+<td style="text-align: left"></td><td style="text-align: left">text</td><td style="text-align: left">The initial status bar text</td><td style="text-align: left">string()</td>
+</tr>
+</table>
+<pre><code class="nohighlight makeup elixir"><span class="w">                                                                          </span><span class="n">list</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">strings</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="p" data-group-id="9723343735-1">[</span><span class="p" data-group-id="9723343735-1">]</span><span class="w">                     </span><span class="o">|</span></code></pre>
+<p>Example:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">statusBar</span><span class="p" data-group-id="5954218550-1">(</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ElixirWx Menu Test&quot;</span><span class="p" data-group-id="5954218550-1">)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="textControl/1">
+    <div class="detail-header">
+    <a href="#textControl/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">textControl(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="tool/1">
+    <div class="detail-header">
+    <a href="#tool/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">tool(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="toolBar/2">
+    <div class="detail-header">
+    <a href="#toolBar/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">toolBar(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="window/1">
+    <div class="detail-header">
+    <a href="#window/1" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">window(attributes)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="window/2">
+    <div class="detail-header">
+    <a href="#window/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">window(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+<p>Create a new window.</p>
+<table>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left">attributes</th><th style="text-align: left">Description</th><th style="text-align: left">Value</th><th style="text-align: left">Default</th>
+</tr>
+</thead>
+<tr>
+<td style="text-align: left">style</td><td style="text-align: left">The window Style.</td><td style="text-align: left">atom()</td><td style="text-align: left">modulename</td>
+</tr>
+<tr>
+<td style="text-align: left">size</td><td style="text-align: left">The initial size of the window.</td><td style="text-align: left">atom()</td><td style="text-align: left">modulename</td>
+</tr>
+<tr>
+<td style="text-align: left">layout</td><td style="text-align: left">The window layout.</td><td style="text-align: left">list</td><td style="text-align: left">[]</td>
+</tr>
+</table>
+<p>Example:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">window</span><span class="p" data-group-id="1026226546-1">(</span><span class="ss">style</span><span class="p">:</span><span class="w"> </span><span class="na">@wxBORDER_SIMPLE</span><span class="p">,</span><span class="w"> </span><span class="ss">size</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1026226546-2">{</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="1026226546-2">}</span><span class="p">,</span><span class="w">
+      </span><span class="ss">layout</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1026226546-3">[</span><span class="ss">proportion</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="ss">flag</span><span class="p">:</span><span class="w"> </span><span class="na">@wxEXPAND</span><span class="p" data-group-id="1026226546-3">]</span><span class="p" data-group-id="1026226546-1">)</span><span class="w"> </span><span class="k" data-group-id="1026226546-4">do</span><span class="w">
+  </span><span class="n">bgColour</span><span class="p" data-group-id="1026226546-5">(</span><span class="na">@wxBLACK</span><span class="p" data-group-id="1026226546-5">)</span><span class="w">
+</span><span class="k" data-group-id="1026226546-4">end</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="xstaticBoxSizer/2">
+    <div class="detail-header">
+    <a href="#xstaticBoxSizer/2" class="detail-link" title="Link to this macro">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this macro</span>
+    </a>
+    <span class="signature">xstaticBoxSizer(attributes, list)</span>
+    
+      <span class="note">(macro)</span>
+      </div>
+  <section class="docstring">
+  </section>
+</div>
+        </section>
+
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-a0c90688fa.js"></script>
+  
+  </body>
+</html>
+

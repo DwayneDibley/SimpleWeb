@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.1">
+    <title>ElixirToHtml – wx_tests v0.1.0</title>
+    <link rel="stylesheet" href="dist/app-240d7fc7e5.css" />
+    <script src="dist/sidebar_items-36ec9cbcf6.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  <a href="readme.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+wx_tests      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">wx_tests v0.1.0</small>
+ElixirToHtml              </h1>
+
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#colour/2">colour(token, colour)</a>
+  </div>
+    <div class="summary-synopsis"><p>Vgiven a token and a colour, return the necessary HTML</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#colourize/1">colourize(tokens)</a>
+  </div>
+    <div class="summary-synopsis"><p>Iterate over the list of tokens returned by lex, turning them into HTML</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#colourize/3">colourize(list, html, flags)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#encode_entities/1">encode_entities(charlist)</a>
+  </div>
+    <div class="summary-synopsis"><p>Encode the HTML entities so that the dont screw up the HTML representation</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fileToHtml/1">fileToHtml(inputFile)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fileToHtmlFile/2">fileToHtmlFile(inputFile, outputFile \\ :nofile)</a>
+  </div>
+    <div class="summary-synopsis"><p>Colourise the contents of the input file, checking that the input file is OK</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#getFiles/1">getFiles(input)</a>
+  </div>
+    <div class="summary-synopsis"><p>Given the input file from the command line, normalize it, and generate an html
+file name for the output</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#lex/1">lex(s)</a>
+  </div>
+    <div class="summary-synopsis"><p>Interface to leex</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#parse/2">parse(inputFile, outputFile)</a>
+  </div>
+    <div class="summary-synopsis"><p>Colourize the given file, returning an HTML string</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#stringToHtml/1">stringToHtml(code)</a>
+  </div>
+</div>
+  </div>
+          
+        </section>
+
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+<div class="detail" id="colour/2">
+    <div class="detail-header">
+    <a href="#colour/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">colour(token, colour)</span>
+          </div>
+  <section class="docstring">
+<p>Vgiven a token and a colour, return the necessary HTML</p>
+  </section>
+</div>
+<div class="detail" id="colourize/1">
+    <div class="detail-header">
+    <a href="#colourize/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">colourize(tokens)</span>
+          </div>
+  <section class="docstring">
+<p>Iterate over the list of tokens returned by lex, turning them into HTML</p>
+  </section>
+</div>
+<div class="detail" id="colourize/3">
+    <div class="detail-header">
+    <a href="#colourize/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">colourize(list, html, flags)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="encode_entities/1">
+    <div class="detail-header">
+    <a href="#encode_entities/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">encode_entities(charlist)</span>
+          </div>
+  <section class="docstring">
+<p>Encode the HTML entities so that the dont screw up the HTML representation.</p>
+  </section>
+</div>
+<div class="detail" id="fileToHtml/1">
+    <div class="detail-header">
+    <a href="#fileToHtml/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">fileToHtml(inputFile)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="fileToHtmlFile/2">
+  
+    <span id="fileToHtmlFile/1"></span>
+  <div class="detail-header">
+    <a href="#fileToHtmlFile/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">fileToHtmlFile(inputFile, outputFile \\ :nofile)</span>
+          </div>
+  <section class="docstring">
+<p>  Colourise the contents of the input file, checking that the input file is OK.</p>
+  </section>
+</div>
+<div class="detail" id="getFiles/1">
+    <div class="detail-header">
+    <a href="#getFiles/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">getFiles(input)</span>
+          </div>
+  <section class="docstring">
+<p>Given the input file from the command line, normalize it, and generate an html
+file name for the output.</p>
+  </section>
+</div>
+<div class="detail" id="lex/1">
+    <div class="detail-header">
+    <a href="#lex/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">lex(s)</span>
+          </div>
+  <section class="docstring">
+<p>Interface to leex</p>
+  </section>
+</div>
+<div class="detail" id="parse/2">
+    <div class="detail-header">
+    <a href="#parse/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">parse(inputFile, outputFile)</span>
+          </div>
+  <section class="docstring">
+<p>  Colourize the given file, returning an HTML string</p>
+  </section>
+</div>
+<div class="detail" id="stringToHtml/1">
+    <div class="detail-header">
+    <a href="#stringToHtml/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">stringToHtml(code)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+        </section>
+
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.1),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-a0c90688fa.js"></script>
+  
+  </body>
+</html>
+
