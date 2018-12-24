@@ -1,6 +1,6 @@
 # SimpleWeb
 
-An HTTP client and server for testing web applications.
+A trivial HTTP client and server for testing web applications.
 
 ## Server:
 
@@ -10,7 +10,7 @@ To run it:
 
 `{:ok, pid} = SimpleWebServer.start()`
 
-it will server on localhost:8080 from ./htdocs.
+it will serve on localhost:8080 from ./htdocs.
 
 This can be configured, see server_config.ex for details.
 
