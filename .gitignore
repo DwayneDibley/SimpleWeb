@@ -22,3 +22,10 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 simple_web_server-*.tar
 
+*.elixir
+*.elixir_scm
+*.protocols
+*.xref
+*.beam
+.elixir_ls/build/test/lib/simple_web_server/ebin/simple_web_server.app
+.elixir_ls/dialyzer_manifest_21.0.1_elixir-1.7.3_test
